@@ -1,0 +1,543 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Avero</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- Header -->
+<header class="header" id="header">
+    <nav class="navbar container">
+        <div class="navbar-inner">
+            <a href="index.html" class="aveomed">
+                <img src="assets/images/h-logo.png" alt="Avero" class="aveomed-logo">
+            </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+        </div>
+        <div class="navbar-block" id="menu">
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html" class="menu-link">Anasayfa</a></li>
+                <li class="menu-item dropdown"><a href="kurumsal.html" class="menu-link">Kurumsal</a></li>
+                <li class="menu-item dropdown">
+                  <span class="dropdown-toggle menu-link">
+                    Ürünler
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                  </span>
+                    <div class="dropdown-content">
+                        <div class="d-flex align-items-start dropdown-contents">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Anestezi ve Yoğun Bakım Ekipmanları</button>
+                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Klinik Tanı ve Teşhis Ekipmanları</button>
+                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Hastane Ekipmanları</button>
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Radyoloji Ekipmanları</button>
+                                <button class="nav-link" id="v-pills-aa-tab" data-bs-toggle="pill" data-bs-target="#v-pills-aa" type="button" role="tab" aria-controls="v-pills-aa" aria-selected="false">Laboratuvar Ekipmanları</button>
+                            </div>
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                    <div class="tab-grid">
+                                        <div class="category-item">
+                                            <a href="urunler.html" class="category-link">
+                                                <div class="category-item-img">
+                                                    <img src="assets/images/product/p1.jpg" alt="Anestezi ve Yoğun Bakım Ekipmanları">
+                                                </div>
+                                                <div class="category-item-text">
+                                                    <h3 class="category-item-title">Anestezi ve Yoğun Bakım Ekipmanları</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="category-item">
+                                            <a href="urunler.html" class="category-link">
+                                                <div class="category-item-img">
+                                                    <img src="assets/images/product/p2.jpg" alt="Anestezi ve Yoğun Bakım Ekipmanları">
+                                                </div>
+                                                <div class="category-item-text">
+                                                    <h3 class="category-item-title">Anestezi ve Yoğun Bakım Ekipmanları</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="category-item">
+                                            <a href="urunler.html" class="category-link">
+                                                <div class="category-item-img">
+                                                    <img src="assets/images/product/p3.jpg" alt="Anestezi ve Yoğun Bakım Ekipmanları">
+                                                </div>
+                                                <div class="category-item-text">
+                                                    <h3 class="category-item-title">Anestezi ve Yoğun Bakım Ekipmanları</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
+                <li class="menu-item"><a href="iletisim.html" class="menu-link">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="langs-content">
+            <span class="langs-content-text">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                         fill="none">
+                    <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                              stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M20 5.69899C19.0653 5.76636 17.8681 6.12824 17.0379 7.20277C15.5385 9.14361 14.039 9.30556 13.0394 8.65861C11.5399 7.6882 12.8 6.11636 11.0401 5.26215C9.89313 4.70542 9.73321 3.19045 10.3716 2"
+                              stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    <path d="M2 11C2.7625 11.6621 3.83046 12.2682 5.08874 12.2682C7.68843 12.2682 8.20837 12.7649 8.20837 14.7518C8.20837 16.7387 8.20837 16.7387 8.72831 18.2288C9.06651 19.1981 9.18472 20.1674 8.5106 21"
+                              stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    <path d="M22 13.4523C21.1129 12.9411 20 12.7308 18.8734 13.5405C16.7177 15.0898 15.2314 13.806 14.5619 15.0889C13.5765 16.9775 17.0957 17.5711 14 22"
+                              stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                TR
+            </span>
+            <ul class="langs">
+                <li class="langs-item"><a href="#" class="langs-link">EN</a></li>
+                <li class="langs-item"><a href="#" class="langs-link">TR</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Home Slider -->
+<section id="home-slider">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(assets/images/slider/slider-new.jpg)">
+                <div class="slide-content">
+                    <h5 class="home-slider-subtitle">Sağlığınız Bizim İçin En Büyük Öncelik</h5>
+                    <h2 class="home-slider-title">Kapsamlı Tıbbi Hizmetlerle Sağlığınızı Koruyoruz</h2>
+                    <button class="h-button"><a href="" class="h-btn-link">Ürünler</a> </button>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(assets/images/slider/banner.jpg)">
+                <div class="slide-content">
+                    <h5 class="home-slider-subtitle">Sağlığınız Bizim İçin En Büyük Öncelik</h5>
+                    <h2 class="home-slider-title">Kapsamlı Tıbbi Hizmetlerle Sağlığınızı Koruyoruz</h2>
+                    <button class="h-button"><a href="" class="h-btn-link">Ürünler</a> </button>
+                </div>
+            </div>
+            <!-- Daha fazla slide ekleyin -->
+        </div>
+        <div class="h-slider-pagination">
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- Home Slider -->
+
+<!-- About Us -->
+<section id="about-us" class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 about-us-left">
+                <div class="about-us-left-big-img">
+                    <img src="assets/images/about/big-img.png" alt="Kurumsal" class="about-us-img-one">
+                </div>
+                <div class="about-us-left-small-img">
+                    <img src="assets/images/about/small-img.png" alt="Kurumsal" class="about-us-img-two">
+                </div>
+                <div class="about-us-left-years">
+                    <span class="about-us-number-years years">25</span>
+                    <div class="about-us-left-title years-title">Yıllık <br> Tecrübe</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="about-us-text-row">
+                    <div class="about-us-text-icon">
+                        <img src="assets/images/k-logo.png" alt="Kurumsal">
+                    </div>
+                    <div class="about-us-text">
+                        <h2 class="about-us-title split-text">Medikal Ürünlerde Güven ve Kalite</h2>
+                        <div class="d-flex align-items-start flex-column">
+                            <div class="nav flex-row nav-pills me-3 w-100 gap-2 about-us-text-content" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-about-tab" data-bs-toggle="pill" data-bs-target="#v-pills-about" type="button" role="tab" aria-controls="v-pills-about" aria-selected="true">Kurumsal</button>
+                                <button class="nav-link" id="v-pills-mission-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mission" type="button" role="tab" aria-controls="v-pills-mission" aria-selected="false">Misyonumuz</button>
+                                <button class="nav-link" id="v-pills-vission-tab" data-bs-toggle="pill" data-bs-target="#v-pills-vission" type="button" role="tab" aria-controls="v-pills-vission" aria-selected="false">Vizyonumuz</button>
+                            </div>
+                            <div class="tab-content" id="v-pills-tabContent2">
+                                <div class="tab-pane fade show active" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab">
+                                    <p class="about-us-text-content">Aveo Grup 1999 yılından bu yana sektörün içinde olan, medikal ve sağlık teknolojileri konusunda öncü ve tecrübeli kişilerin desteğiyle 2019 yılında kurulmuştur. Elde edilen tecrübelerin daha genç, dinamik ve vizyoner bir ekibe aktarılmasını hedef edinmiştir. Her biri alanının en iyisi olan çözüm ortaklıklarıyla sektörde faaliyetlerine devam etmektedir. Aveo Grup bundan sonrada yapacağı yeni atılımlar ve işbirlikleri sayesinde sektörde hızla büyümeye devam ederek ülkemize ve insanımıza en yeni teknolojileri ve hizmetleri sunmaya devam edecektir.</p>
+                                    <button class="h-button about-us-button"><a href="" class="h-btn-link">Ürünler</a></button>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-mission" role="tabpanel" aria-labelledby="v-pills-mission-tab">
+                                    <p class="about-us-text-content">Kurulduğu günden bu yana güçlü AR-GE kültüründen beslenen Aveo Grup , yetenekli insan kaynağı, güçlü teknik altyapı ve doğru finansal yönetim becerileri doğrultusunda üreten ve geliştiren bir şirkettir. Aveo Grup, çalışanlarıyla birlikte sürekli gelişmeyi, evrensel kalite ve standartlarda ürünler sunarak müşterilerini memnun etmeyi amaçlar. İşte bu nedenle ülkesi, müşterileri, ortakları ve bayileri için güvenilirlik, devamlılık ve saygınlık simgesi olmayı hedeflemektedir. Kalite standartlarının gerekliliklerini karşılayan, üretimin her safhasında toplam kalite bilincini göz önünde bulunduran Aveo Grup, sürdürülebilir kalitenin sağlanması, kalite sisteminin geliştirilmesi ve çalışan yetkinliğinin arttırılması için planlanan kişisel gelişim ve eğitim teknikleriyle kalite politikasını desteklemektedir.</p>
+                                    <button class="h-button about-us-button"><a href="" class="h-btn-link">Ürünler</a></button>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-vission" role="tabpanel" aria-labelledby="v-pills-vission-tab">
+                                    <p class="about-us-text-content">Beyin ve Omurilik Cerrahisi başta olmak üzere bütün sağlık branşlarinda ülkemiz ve dünyamızdaki medikal ve cerrahi standartları temsil etmek. Bu anlamda akla gelen ilk kurumlardan biri olmak. Yaptığımız ve yapacağımız projelerle hem ülkemiz hemde kendimiz adına gurur kaynağı olmak maksadı ile çıktığımız bu yolda hedeflerimize her geçen gün daha da yaklaşıyoruz.</p>
+                                    <button class="h-button about-us-button"><a href="" class="h-btn-link">Ürünler</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-icon">
+        <img src="assets/images/logo.png" alt="Kurumsal">
+    </div>
+</section>
+<!-- About Us -->
+
+<!-- Products -->
+<section id="h-products" class="product-animation" style="background-image: url(assets/images/product/product-bg.png)">
+    <div class="container">
+        <div class="h-products-title">
+            <h2 class="h-products-title-text split-text">Ürünler</h2>
+        </div>
+        <div class="row " style="margin-top: 30px">
+            <div class="col-4 mt-4 product-item-animation">
+                <div class="h-products-items">
+                    <a href="product.html">
+                        <div class="h-products-item-img">
+                            <img src="assets/images/product/c1.png" alt="Anestezi ve Yoğun Bakım Ekipmanları">
+                        </div>
+                        <div class="h-products-item-txt">
+                            <h3 class="h-products-item-txt-title">Anestezi ve Yoğun Bakım Ekipmanları</h3>
+                            <button class="h-button"><a href="" class="h-btn-link">Ürünler</a> </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 mt-4 product-item-animation">
+                <div class="h-products-items">
+                    <a href="product.html">
+                        <div class="h-products-item-img">
+                            <img src="assets/images/product/c1.png" alt="Anestezi ve Yoğun Bakım Ekipmanları">
+                        </div>
+                        <div class="h-products-item-txt">
+                            <h3 class="h-products-item-txt-title">Anestezi ve Yoğun Bakım Ekipmanları</h3>
+                            <button class="h-button"><a href="" class="h-btn-link">Ürünler</a> </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 mt-4 product-item-animation">
+                <div class="h-products-items">
+                    <a href="product.html">
+                        <div class="h-products-item-img">
+                            <img src="assets/images/product/c1.png" alt="Anestezi ve Yoğun Bakım Ekipmanları">
+                        </div>
+                        <div class="h-products-item-txt">
+                            <h3 class="h-products-item-txt-title">Anestezi ve Yoğun Bakım Ekipmanları</h3>
+                            <button class="h-button"><a href="" class="h-btn-link">Ürünler</a> </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 mt-4 product-item-animation">
+                <div class="h-products-items">
+                    <a href="product.html">
+                        <div class="h-products-item-img">
+                            <img src="assets/images/product/c1.png" alt="Anestezi ve Yoğun Bakım Ekipmanları">
+                        </div>
+                        <div class="h-products-item-txt">
+                            <h3 class="h-products-item-txt-title">Anestezi ve Yoğun Bakım Ekipmanları</h3>
+                            <button class="h-button"><a href="" class="h-btn-link">Ürünler</a> </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Products -->
+
+<!-- Portfolio -->
+<section id="h-portfolio" class="home-portfolio">
+    <div class="d-flex w-100">
+        <div class="col-6">
+            <img src="assets/images/img/doktor.jpg" alt="" class="portfolio-img">
+        </div>
+        <div class="col-6" style="background-color: #F7F7F7">
+            <div class="home-portfolio-text">
+                <div class="about-us-text-icon">
+                    <img src="assets/images/k-logo.png" alt="Kurumsal">
+                </div>
+                <h2 class="portfolio-us-title split-text">Medikal Ürünlerde Güven ve Kalite</h2>
+                <p class="about-us-text-content">
+                    10 yılı aşkın deneyimimizle, kaliteli ve güvenilir medikal ürünler sunuyoruz. Hastalarımızın ve sağlık profesyonellerinin ihtiyaçlarını en iyi şekilde karşılamak için çalışıyoruz. Sağlık sektöründe uzmanlaşmış ekibimizle, en yenilikçi ve güvenilir çözümleri sunmaktan gurur duyuyoruz. Misyonumuz, müşterilerimize güvenilir, uygun fiyatlı ve etkili medikal ürünler sunarak sağlıklı bir yaşam kalitesine katkıda bulunmaktır.
+                </p>
+                <button class="h-button about-us-button"><a href="" class="h-btn-link">Ürünler</a></button>
+
+            </div>
+        </div>
+    </div>
+    <div class="about-icon">
+        <img src="assets/images/logo.png" alt="Kurumsal">
+    </div>
+</section>
+<!-- Portfolio -->
+
+<!-- Referanslar -->
+<section class="home-reference-section">
+    <div class="container">
+        <div class="swiper homeReference">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="home-reference-item">
+                        <img src="assets/images/reference/1.jpg" alt="Referanslar">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-reference-item">
+                        <img src="assets/images/reference/2.jpg" alt="Referanslar">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-reference-item">
+                        <img src="assets/images/reference/3.jpg" alt="Referanslar">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-reference-item">
+                        <img src="assets/images/reference/4.jpg" alt="Referanslar">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-reference-item">
+                        <img src="assets/images/reference/5.jpg" alt="Referanslar">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-reference-item">
+                        <img src="assets/images/reference/7.jpg" alt="Referanslar">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-reference-item">
+                        <img src="assets/images/reference/8.jpg" alt="Referanslar">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- Referanslar -->
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 footer-border-right">
+                <div class="footer-left content">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Avero">
+                    </div>
+                    <p class="footer-text">
+                        10 yılı aşkın deneyimimizle, kaliteli ve güvenilir medikal ürünler sunuyoruz. Hastalarımızın ve sağlık profesyonellerinin ihtiyaçlarını en iyi şekilde karşılamak için çalışıyoruz. Sağlık sektöründe uzmanlaşmış ekibimizle, en yenilikçi ve güvenilir çözümleri sunmaktan gurur duyuyoruz. Misyonumuz, müşterilerimize güvenilir, uygun fiyatlı ve etkili medikal ürünler sunarak sağlıklı bir yaşam kalitesine katkıda bulunmaktır.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 footer-border-right">
+                <div class="footer-middle content">
+                    <h3 class="footer-title">Hızlı Erişim</h3>
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Anasayfa</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Kurumsal</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Ürünler</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Pricing</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3 footer-border-right">
+                <div class="footer-middle content">
+                    <h3 class="footer-title">Ürünler</h3>
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Anasayfa</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Kurumsal</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Ürünler</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Pricing</a></li>
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3 footer-border-right">
+                <div class="footer-right content">
+                    <h3 class="footer-title">İletişim</h3>
+                    <ul class="footer-contact">
+                        <li class="footer-contact-item">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            <span class="footer-contact-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span class="footer-contact-text">+90 123 456 78 90</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="footer-contact-text">
+                                info@example.com
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="footer-bottom-left">
+                        <span class="footer-bottom-text">© 2021 Avero. Tüm Hakları Saklıdır.</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="footer-bottom-right">
+                        <svg width="auto" height="35" viewBox="0 0 323 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M126.762 44.9415C125.703 43.0398 124.198 41.5755 122.25 40.5448C120.3 39.5141 118.042 39.0001 115.474 39.0001C112.907 39.0001 110.65 39.5141 108.702 40.5448C106.753 41.5755 105.246 43.0398 104.186 44.9415C103.122 46.8432 102.594 49.0277 102.594 51.5013C102.594 53.9724 103.124 56.1594 104.186 58.0586C105.245 59.9603 106.752 61.4272 108.702 62.4553C110.65 63.486 112.906 64.0001 115.474 64.0001C118.041 64.0001 120.3 63.486 122.249 62.4553C124.197 61.4272 125.701 59.9691 126.761 58.085C127.824 56.1971 128.355 54.0051 128.355 51.5013C128.356 49.0277 127.824 46.8432 126.762 44.9415Z" fill="white"/>
+                            <path d="M92.2298 39.0792H92.7627C95.5933 39.0792 97.8884 41.3743 97.8884 44.2049V58.7964C97.8884 61.627 95.5933 63.9221 92.7627 63.9221H92.2298C89.3992 63.9221 87.1041 61.627 87.1041 58.7964V44.2049C87.1041 41.3731 89.3992 39.0792 92.2298 39.0792Z" fill="white"/>
+                            <path d="M140.409 61.5805L132.129 44.8334C130.82 42.1838 132.748 39.0792 135.704 39.0792H152.715C155.671 39.0792 157.599 42.1838 156.29 44.8334L148.01 61.5805C146.453 64.7278 141.965 64.7278 140.409 61.5805Z" fill="white"/>
+                            <path d="M169.98 41.1921L178.13 60.1225C178.903 61.9199 177.586 63.9209 175.63 63.9209H157.907C155.952 63.9209 154.633 61.9186 155.407 60.1225L163.557 41.1921C164.77 38.3741 168.766 38.3741 169.98 41.1921Z" fill="white"/>
+                            <path d="M81.9508 42.2366V58.7851C81.9508 61.622 79.6506 63.9221 76.8138 63.9221H58.5571C55.7215 63.9221 53.4226 61.6232 53.4226 58.7876V42.2341C53.4226 39.9691 55.9955 38.6657 57.8218 40.0056L66.2243 46.1682C67.0953 46.8067 68.2793 46.8067 69.1504 46.1682L77.5528 40.0068C79.3779 38.6682 81.9508 39.9716 81.9508 42.2366Z" fill="white"/>
+                            <path d="M37.6653 16.1193C37.6653 11.1489 40.7064 7.74808 45.3171 7.74808C48.9795 7.74808 51.6609 9.87358 52.2822 13.1436H50.0259C49.4373 10.9527 47.5407 9.74278 45.3498 9.74278C42.1452 9.74278 39.8889 12.1953 39.8889 16.0866C39.8889 19.8471 41.9817 22.365 45.1863 22.365C47.5407 22.365 49.4373 21.057 50.0586 19.0296H52.3476C51.5955 22.2669 48.7833 24.3924 45.1863 24.3924C40.7064 24.3924 37.6653 21.0897 37.6653 16.1193Z" fill="white"/>
+                            <path d="M63.7119 7.97698V10.0044H62.4693C59.559 10.0044 57.6951 11.9664 57.6951 14.9748V24H55.4388V8.17318H57.5643L57.7278 10.6257C58.3491 8.92528 60.0168 7.81348 62.2404 7.81348C62.7309 7.81348 63.156 7.84618 63.7119 7.97698Z" fill="white"/>
+                            <path d="M70.2909 24.3924C66.9228 24.3924 64.9281 22.4958 64.9281 19.7163C64.9281 16.806 67.1517 14.9748 70.8468 14.6805L76.0788 14.2554V13.7322C76.0788 10.6257 74.2149 9.64468 71.8932 9.64468C69.1464 9.64468 67.5114 10.8873 67.5114 13.0128H65.4513C65.4513 9.80818 68.0673 7.74808 71.9586 7.74808C75.621 7.74808 78.3024 9.57928 78.3024 13.7649V24H76.4058L76.1115 21.2205C75.1305 23.2152 72.9723 24.3924 70.2909 24.3924ZM70.8141 22.5612C74.1495 22.5612 76.0788 20.2395 76.0788 16.806V15.9558L71.4027 16.3155C68.427 16.5771 67.2171 17.8851 67.2171 19.6509C67.2171 21.5802 68.6559 22.5612 70.8141 22.5612Z" fill="white"/>
+                            <path d="M95.6189 24H93.3953V10.0698H85.2857V24H83.0294V10.0698H80.6096V8.17318H83.0294V5.09938C83.0294 1.53508 84.9587 0.161682 87.3131 0.161682C87.869 0.161682 88.5557 0.194382 89.0789 0.292482V2.25448H87.7055C85.8089 2.25448 85.2857 3.23548 85.2857 5.09938V8.17318H93.3953V3.17008H95.6189V8.17318H98.7908V10.0698H95.6189V24Z" fill="white"/>
+                            <path d="M107.879 24.3924C103.235 24.3924 100.129 21.057 100.129 16.0866C100.129 11.1489 103.202 7.74808 107.715 7.74808C111.999 7.74808 114.909 10.7892 114.909 15.2691V16.3809H102.32C102.483 20.2395 104.51 22.4631 107.911 22.4631C110.495 22.4631 112.162 21.3513 112.751 19.2585H114.909C114.059 22.5939 111.606 24.3924 107.879 24.3924ZM107.715 9.67738C104.739 9.67738 102.777 11.6394 102.385 14.7459H112.653C112.653 11.7048 110.691 9.67738 107.715 9.67738Z" fill="white"/>
+                            <path d="M124.403 24.3924C119.792 24.3924 117.078 20.8608 117.078 16.1193C117.078 11.3451 119.792 7.74808 124.501 7.74808C127.117 7.74808 129.209 8.89258 130.321 11.1816V0.161682H132.578V24H130.616L130.387 20.7627C129.275 23.2152 127.051 24.3924 124.403 24.3924ZM124.795 22.3323C128.261 22.3323 130.289 19.7163 130.289 16.0539C130.289 12.4242 128.261 9.77548 124.795 9.77548C121.361 9.77548 119.367 12.4242 119.367 16.0539C119.367 19.7163 121.361 22.3323 124.795 22.3323Z" fill="white"/>
+                            <path d="M149.036 24L143.804 8.17318H146.126L149.233 17.7216C149.592 18.768 149.887 19.8471 150.214 21.1224C150.475 19.8471 150.998 18.2448 151.162 17.7216L154.301 8.17318H156.623L159.729 17.7216C160.024 18.5718 160.416 19.9452 160.71 21.1224C161.037 19.8144 161.103 19.422 161.659 17.7216L164.798 8.17318H167.152L161.789 24H159.598L156.328 14.0592C155.936 12.882 155.674 11.901 155.478 10.9527C155.249 11.8029 154.988 12.7512 154.563 14.0592L151.293 24H149.036Z" fill="white"/>
+                            <path d="M170.755 3.82408C169.84 3.82408 169.088 3.07198 169.088 2.15638C169.088 1.24078 169.84 0.455982 170.755 0.455982C171.671 0.455982 172.456 1.24078 172.456 2.15638C172.456 3.07198 171.671 3.82408 170.755 3.82408ZM169.644 24V8.17318H171.9V24H169.644Z" fill="white"/>
+                            <path d="M179.908 24H177.684V10.0698H174.512V8.17318H177.684V3.17008H179.908V8.17318H183.08V10.0698H179.908V24Z" fill="white"/>
+                            <path d="M187.947 23.9673H185.691V0.161682H187.947V10.92C188.961 9.02338 190.89 7.74808 193.539 7.74808C197.692 7.74808 199.556 10.3314 199.556 14.3208V24H197.299V14.8113C197.299 11.1162 195.566 9.80818 193.114 9.80818C189.713 9.80818 187.947 12.3261 187.947 15.3672V23.9673Z" fill="white"/>
+                            <path d="M212.468 30.8997V8.17318H214.43L214.659 11.3778C215.77 8.92528 217.994 7.74808 220.643 7.74808C225.221 7.74808 227.968 11.247 227.968 16.0212C227.968 20.7954 225.319 24.3924 220.643 24.3924C217.961 24.3924 215.836 23.2479 214.724 20.9589V30.8997H212.468ZM214.757 16.0866C214.757 19.7163 216.784 22.365 220.25 22.365C223.684 22.365 225.679 19.7163 225.679 16.0866C225.679 12.4242 223.684 9.80818 220.25 9.80818C216.784 9.80818 214.757 12.4242 214.757 16.0866Z" fill="white"/>
+                            <path d="M235.782 24.3924C232.414 24.3924 230.42 22.4958 230.42 19.7163C230.42 16.806 232.643 14.9748 236.338 14.6805L241.57 14.2554V13.7322C241.57 10.6257 239.706 9.64468 237.385 9.64468C234.638 9.64468 233.003 10.8873 233.003 13.0128H230.943C230.943 9.80818 233.559 7.74808 237.45 7.74808C241.112 7.74808 243.794 9.57928 243.794 13.7649V24H241.897L241.603 21.2205C240.622 23.2152 238.464 24.3924 235.782 24.3924ZM236.306 22.5612C239.641 22.5612 241.57 20.2395 241.57 16.806V15.9558L236.894 16.3155C233.918 16.5771 232.709 17.8851 232.709 19.6509C232.709 21.5802 234.147 22.5612 236.306 22.5612Z" fill="white"/>
+                            <path d="M246.654 19.5528H248.812C248.812 21.384 250.185 22.5285 252.409 22.5285C254.861 22.5285 256.3 21.4821 256.3 19.7817C256.3 18.4737 255.646 17.7216 253.782 17.2638L251.068 16.5771C248.322 15.8904 246.981 14.4516 246.981 12.2934C246.981 9.51388 249.302 7.74808 252.703 7.74808C256.039 7.74808 258.197 9.57928 258.295 12.5223H256.104C256.039 10.6911 254.763 9.61198 252.638 9.61198C250.414 9.61198 249.172 10.5603 249.172 12.2607C249.172 13.4706 250.022 14.3208 251.755 14.7459L254.469 15.4326C257.216 16.1193 258.458 17.3946 258.458 19.6836C258.458 22.5285 256.039 24.3924 252.442 24.3924C248.877 24.3924 246.654 22.4958 246.654 19.5528Z" fill="white"/>
+                            <path d="M260.505 19.5528H262.664C262.664 21.384 264.037 22.5285 266.261 22.5285C268.713 22.5285 270.152 21.4821 270.152 19.7817C270.152 18.4737 269.498 17.7216 267.634 17.2638L264.92 16.5771C262.173 15.8904 260.832 14.4516 260.832 12.2934C260.832 9.51388 263.154 7.74808 266.555 7.74808C269.89 7.74808 272.048 9.57928 272.147 12.5223H269.956C269.89 10.6911 268.615 9.61198 266.489 9.61198C264.266 9.61198 263.023 10.5603 263.023 12.2607C263.023 13.4706 263.873 14.3208 265.607 14.7459L268.321 15.4326C271.067 16.1193 272.31 17.3946 272.31 19.6836C272.31 22.5285 269.89 24.3924 266.293 24.3924C262.729 24.3924 260.505 22.4958 260.505 19.5528Z" fill="white"/>
+                            <path d="M276.809 3.82408C275.894 3.82408 275.142 3.07198 275.142 2.15638C275.142 1.24078 275.894 0.455982 276.809 0.455982C277.725 0.455982 278.51 1.24078 278.51 2.15638C278.51 3.07198 277.725 3.82408 276.809 3.82408ZM275.698 24V8.17318H277.954V24H275.698Z" fill="white"/>
+                            <path d="M281.22 16.0866C281.22 11.247 284.621 7.74808 289.264 7.74808C293.908 7.74808 297.309 11.247 297.309 16.0866C297.309 20.8935 293.908 24.3924 289.264 24.3924C284.621 24.3924 281.22 20.8935 281.22 16.0866ZM283.509 16.0539C283.509 19.7817 285.864 22.365 289.264 22.365C292.633 22.365 295.02 19.7817 295.02 16.0539C295.02 12.3915 292.633 9.77548 289.264 9.77548C285.864 9.77548 283.509 12.3915 283.509 16.0539Z" fill="white"/>
+                            <path d="M302.847 24H300.59V8.17318H302.552L302.879 10.92C303.926 8.89258 306.019 7.74808 308.308 7.74808C312.657 7.74808 314.455 10.3314 314.455 14.3208V24H312.199V14.8113C312.199 11.1162 310.531 9.80818 307.915 9.80818C304.678 9.80818 302.847 12.1626 302.847 15.7269V24Z" fill="white"/>
+                            <path d="M322.615 22.8882C322.615 24.9156 321.045 26.6814 319.018 26.9757V25.7658C320.195 25.5696 321.045 24.7194 321.045 23.8038C320.849 23.9346 320.587 24.0327 320.195 24.0327C319.279 24.0327 318.494 23.3787 318.494 22.2669C318.494 21.1224 319.279 20.3049 320.424 20.3049C321.601 20.3049 322.615 21.2532 322.615 22.8882Z" fill="white"/>
+                            <path d="M5.40673 64H3.18313V50.0698H0.0112305V48.1732H3.18313V43.1701H5.40673V48.1732H8.57863V50.0698H5.40673V64Z" fill="white"/>
+                            <path d="M13.4461 63.9673H11.1898V40.1617H13.4461V50.92C14.4598 49.0234 16.3891 47.7481 19.0378 47.7481C23.1907 47.7481 25.0546 50.3314 25.0546 54.3208V64H22.7983V54.8113C22.7983 51.1162 21.0652 49.8082 18.6127 49.8082C15.2119 49.8082 13.4461 52.3261 13.4461 55.3672V63.9673Z" fill="white"/>
+                            <path d="M35.8627 64.3924C31.2193 64.3924 28.1128 61.057 28.1128 56.0866C28.1128 51.1489 31.1866 47.7481 35.6992 47.7481C39.9829 47.7481 42.8932 50.7892 42.8932 55.2691V56.3809H30.3037C30.4672 60.2395 32.4946 62.4631 35.8954 62.4631C38.4787 62.4631 40.1464 61.3513 40.735 59.2585H42.8932C42.043 62.5939 39.5905 64.3924 35.8627 64.3924ZM35.6992 49.6774C32.7235 49.6774 30.7615 51.6394 30.3691 54.7459H40.6369C40.6369 51.7048 38.6749 49.6774 35.6992 49.6774Z" fill="white"/>
+                            <path d="M189.436 57.5528H191.594C191.594 59.384 192.968 60.5285 195.191 60.5285C197.644 60.5285 199.083 59.4821 199.083 57.7817C199.083 56.4737 198.429 55.7216 196.565 55.2638L193.851 54.5771C191.104 53.8904 189.763 52.4516 189.763 50.2934C189.763 47.5139 192.085 45.7481 195.486 45.7481C198.821 45.7481 200.979 47.5793 201.077 50.5223H198.887C198.821 48.6911 197.546 47.612 195.42 47.612C193.197 47.612 191.954 48.5603 191.954 50.2607C191.954 51.4706 192.804 52.3208 194.537 52.7459L197.252 53.4326C199.998 54.1193 201.241 55.3946 201.241 57.6836C201.241 60.5285 198.821 62.3924 195.224 62.3924C191.66 62.3924 189.436 60.4958 189.436 57.5528Z" fill="white"/>
+                            <path d="M205.74 41.8241C204.825 41.8241 204.073 41.072 204.073 40.1564C204.073 39.2408 204.825 38.456 205.74 38.456C206.656 38.456 207.441 39.2408 207.441 40.1564C207.441 41.072 206.656 41.8241 205.74 41.8241ZM204.628 62V46.1732H206.885V62H204.628Z" fill="white"/>
+                            <path d="M210.184 53.6288C210.184 49.3124 212.963 45.7481 217.607 45.7481C220.354 45.7481 222.446 47.0234 223.46 49.3451L223.689 46.1732H225.651V61.5095C225.651 66.2183 222.643 69.2921 217.999 69.2921C213.944 69.2921 211.1 67.0031 210.478 63.1772H212.735C213.225 65.7278 215.187 67.232 218.032 67.232C221.269 67.232 223.427 65.0411 223.427 61.7384V57.9779C222.348 60.2015 220.157 61.5095 217.443 61.5095C212.931 61.5095 210.184 57.9452 210.184 53.6288ZM212.44 53.5961C212.44 56.8334 214.435 59.4821 217.77 59.4821C221.204 59.4821 223.231 56.9969 223.231 53.5961C223.231 50.228 221.269 47.7428 217.803 47.7428C214.402 47.7428 212.44 50.3915 212.44 53.5961Z" fill="white"/>
+                            <path d="M232.289 62H230.032V46.1732H231.994L232.321 48.92C233.368 46.8926 235.461 45.7481 237.75 45.7481C242.099 45.7481 243.897 48.3314 243.897 52.3208V62H241.641V52.8113C241.641 49.1162 239.973 47.8082 237.357 47.8082C234.12 47.8082 232.289 50.1626 232.289 53.7269V62Z" fill="white"/>
+                            <path d="M252.612 62.3924C249.244 62.3924 247.25 60.4958 247.25 57.7163C247.25 54.806 249.473 52.9748 253.168 52.6805L258.4 52.2554V51.7322C258.4 48.6257 256.536 47.6447 254.215 47.6447C251.468 47.6447 249.833 48.8873 249.833 51.0128H247.773C247.773 47.8082 250.389 45.7481 254.28 45.7481C257.943 45.7481 260.624 47.5793 260.624 51.7649V62H258.727L258.433 59.2205C257.452 61.2152 255.294 62.3924 252.612 62.3924ZM253.136 60.5612C256.471 60.5612 258.4 58.2395 258.4 54.806V53.9558L253.724 54.3155C250.749 54.5771 249.539 55.8851 249.539 57.6509C249.539 59.5802 250.977 60.5612 253.136 60.5612Z" fill="white"/>
+                            <path d="M268.167 62H265.943V48.0698H262.771V46.1732H265.943V41.1701H268.167V46.1732H271.339V48.0698H268.167V62Z" fill="white"/>
+                            <path d="M285.068 46.1732H287.324V62H285.362L285.068 59.3186C284.185 61.1498 281.994 62.3924 279.509 62.3924C275.781 62.3924 273.754 59.8418 273.754 55.9832V46.1405H276.043V55.2638C276.043 59.0243 277.71 60.365 280.228 60.365C283.269 60.365 285.068 58.3376 285.068 54.5771V46.1732Z" fill="white"/>
+                            <path d="M299.97 45.977V48.0044H298.728C295.818 48.0044 293.954 49.9664 293.954 52.9748V62H291.697V46.1732H293.823L293.986 48.6257C294.608 46.9253 296.275 45.8135 298.499 45.8135C298.989 45.8135 299.415 45.8462 299.97 45.977Z" fill="white"/>
+                            <path d="M308.674 62.3924C304.031 62.3924 300.924 59.057 300.924 54.0866C300.924 49.1489 303.998 45.7481 308.511 45.7481C312.794 45.7481 315.705 48.7892 315.705 53.2691V54.3809H303.115C303.279 58.2395 305.306 60.4631 308.707 60.4631C311.29 60.4631 312.958 59.3513 313.547 57.2585H315.705C314.855 60.5939 312.402 62.3924 308.674 62.3924ZM308.511 47.6774C305.535 47.6774 303.573 49.6394 303.181 52.7459H313.448C313.448 49.7048 311.486 47.6774 308.511 47.6774Z" fill="white"/>
+                            <path d="M320.718 62.3597C319.737 62.3597 318.92 61.5422 318.92 60.5939C318.92 59.6129 319.737 58.7954 320.718 58.7954C321.699 58.7954 322.517 59.6129 322.517 60.5939C322.517 61.5422 321.699 62.3597 320.718 62.3597Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
+
+<!-- Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script src="assets/js/gsap.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+    // Toggle to show and hide navbar menu
+    const navbarMenu = document.getElementById("menu");
+    const burgerMenu = document.getElementById("burger");
+
+    burgerMenu.addEventListener("click", () => {
+        navbarMenu.classList.toggle("is-active");
+        burgerMenu.classList.toggle("is-active");
+    });
+
+    // Toggle to show and hide dropdown menu
+    const dropdown = document.querySelectorAll(".dropdown");
+
+    dropdown.forEach((item) => {
+        const dropdownToggle = item.querySelector(".dropdown-toggle");
+
+        dropdownToggle.addEventListener("click", () => {
+            const dropdownShow = document.querySelector(".dropdown-show");
+            toggleDropdownItem(item);
+
+            // Remove 'dropdown-show' class from other dropdown
+            if (dropdownShow && dropdownShow != item) {
+                toggleDropdownItem(dropdownShow);
+            }
+        });
+    });
+
+    // Function to display the dropdown menu
+    const toggleDropdownItem = (item) => {
+        const dropdownContent = item.querySelector(".dropdown-content");
+
+        // Remove other dropdown that have 'dropdown-show' class
+        if (item.classList.contains("dropdown-show")) {
+            dropdownContent.removeAttribute("style");
+            item.classList.remove("dropdown-show");
+        } else {
+            // Added max-height on active 'dropdown-show' class
+            dropdownContent.style.height = dropdownContent.scrollHeight + "px";
+            item.classList.add("dropdown-show");
+        }
+    };
+
+    // Fixed dropdown menu on window resizing
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 992) {
+            document.querySelectorAll(".dropdown-content").forEach((item) => {
+                item.removeAttribute("style");
+            });
+            dropdown.forEach((item) => {
+                item.classList.remove("dropdown-show");
+            });
+        }
+    });
+
+    // Fixed navbar menu on window resizing
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 992) {
+            if (navbarMenu.classList.contains("is-active")) {
+                navbarMenu.classList.remove("is-active");
+                burgerMenu.classList.remove("is-active");
+            }
+        }
+    });
+
+
+</script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
