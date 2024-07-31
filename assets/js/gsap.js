@@ -193,6 +193,48 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+    const aboutServices = gsap.utils.toArray(".aboutServices");
+    aboutServices.forEach((item, index) => {
+        gsap.from(item, {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: aboutServices,
+                start: "top 80%",
+                end: "bottom 60%",
+                toggleActions: "play none none none"
+            }
+        });
+    });
+    const contactForm = gsap.utils.toArray(".contact-form");
+    contactForm.forEach((item, index) => {
+        gsap.from(item, {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: contactForm,
+                start: "top 80%",
+                end: "bottom 60%",
+                toggleActions: "play none none none"
+            }
+        });
+    });
+    const contactLocation = gsap.utils.toArray(".contact-location");
+    contactLocation.forEach((item, index) => {
+        gsap.from(item, {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: contactLocation,
+                start: "top 80%",
+                end: "bottom 60%",
+                toggleActions: "play none none none"
+            }
+        });
+    });
     const footer = gsap.utils.toArray(".footer");
     footer.forEach((item, index) => {
         gsap.from(item, {

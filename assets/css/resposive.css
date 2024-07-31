@@ -1,0 +1,190 @@
+@media screen and (max-width:1200px){
+    .about-us-left-years,
+    .about-us-left-small-img{
+        right: 0;
+    }
+    .about-us-left-small-img{
+        bottom: 0;
+    }
+    .about-us-text-row{
+        margin: 50px 0;
+    }
+    .about-icon{
+        top: 50%;
+    }
+}
+@media screen and (max-width:1000px){
+    .header{
+        height: 100px !important;
+    }
+    .navbar-inner{
+        height: auto !important;
+    }
+    .dropdown-content .tab-content{
+        display: none !important;
+    }
+    .dropdown-content{
+        padding: 0 !important;
+    }
+    .menu{
+        padding: 50px 0;
+    }
+    .mobil-hamburger{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+    .mobil-hamburger .langs-content{
+        display: inline-flex;
+    }
+    .pc{
+        display: none;
+    }
+    .langs-content:hover .langs{
+        top: 67px;
+    }
+    .navbar-block{
+        width: 50%;
+        right: 0 !important;
+        left: auto !important;
+    }
+    .dropdown-content .nav-pills{
+        width: 100%;
+    }
+    .menu-link{
+        padding-inline: 1rem;
+    }
+}
+@media screen and (max-width: 760px){
+    .menu{
+        margin: 0 20px !important;
+    }
+    .navbar-block{
+        width: 100%;
+    }
+    .home-slider-title{
+        font-size: 30px;
+    }
+    .home-slider-desc{
+        font-size: 15px;
+    }
+    #home-slider .swiper-pagination{
+        flex-direction: row;
+        left: 0 !important;
+        top: auto !important;
+        justify-content: center !important;
+    }
+    .h-slider-pagination{
+        width: 100%;
+        height: 100% !important;
+        right: 0 !important;
+    }
+    .swiper-slide-active .slide-content{
+        padding:0 20px;
+    }
+    .home-slider-desc{
+        margin: 0 0 20px;
+    }
+
+    .about-us-left-small-img{
+        display: none;
+    }
+    .h-products-title{
+        font-size: 36px;
+    }
+    .about-us-text h2{
+        font-size: 30px;
+    }
+    .about-us-text .nav-link{
+        width: 110px !important;
+    }
+    #h-products{
+        margin: 0;
+    }
+    .home-portfolio-text{
+        padding: 50px 15px;
+    }
+    .portfolio-us-title{
+        font-size: 30px;
+    }
+    .about-icon img{
+        height: 200px;
+    }
+    .home-reference-section{
+        padding: 20px 0;
+    }
+    .home-reference-section .homeReference{
+        height: 30vh;
+    }
+    .footer-border-right:after{
+        display: none;
+    }
+    .footer-border-right{
+        padding: 20px 0;
+    }
+    .footer-right,
+    .footer-middle{
+        padding:0;
+    }
+    .footer-bottom .footer-bottom-text{
+        font-size: 12px;
+    }
+    .about-us-left-big-img{
+        height: 375px !important;
+    }
+    #about-us-services{
+        padding: 20px 0;
+    }
+    .page-about-us{
+        padding: 50px 0 !important;
+    }
+    .page-about-us .about-us-text-row{
+        margin: 50px 0 0;
+    }
+    .product-content,
+    .about-us-services-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-us-services .about-us-services-subtitle{
+        font-size: 18px;
+    }
+    .about-us-services .about-us-services-title{
+        font-size: 30px;
+    }
+    .about-us-services-desc{
+        font-size: 14px;
+    }
+    .about-us-left-years,
+    .banner-breadcrumb{
+        right: 10px;
+    }
+    .contact-forms{
+        padding: 50px 10px;
+    }
+    .contact-text-content{
+        padding: 50px 0;
+    }
+    .location-row,
+    .contact-info{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .product-item{
+        margin:10px 0;
+    }
+    .product-details-related .product-item{
+        margin: 10px;
+    }
+    .banner-title{
+        font-size: 30px;
+    }
+    .product-details .mySwiper2{
+        height: 350px;
+    }
+    .detailsSwiper{
+        height: 25% !important;
+    }
+    .product-details{
+        padding: 50px 0 20px;
+    }
+}
